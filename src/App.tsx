@@ -1,11 +1,12 @@
 import React from "react";
 import CardView from "./CardView/CardView";
-import Card from "./lib/Card";
 import CardDeck from "./lib/CardDeck";
 import PokerHand from "./lib/PokerHand";
 
 function App() {
-  const card = new Card('hearts', 'A')
+  const cardDeck = new CardDeck();
+  const card = cardDeck.getCard();
+  console.log(card.getScore());
   return (
     <div className="App">
       <div className="playingCards faceImages">
