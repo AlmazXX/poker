@@ -29,7 +29,7 @@ class CardDeck {
   }
 
   getCard() {
-    const randFrom = (number: number) => Math.floor(Math.random() * number - 1);
+    const randFrom = (number: number) => Math.floor(Math.random() * number);
     return this.cards.splice(randFrom(this.cards.length), 1)[0];
   }
 

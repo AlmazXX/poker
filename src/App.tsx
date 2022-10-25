@@ -10,6 +10,7 @@ function App() {
     const cardDeck = new CardDeck();
     const pokerHand = new PokerHand(cardDeck.getCards(5));
     setCards(pokerHand.hand);
+    console.log(pokerHand.getOutcome());
   };
 
   const dealCardsBtn = <button onClick={dealCards}>Deal cards</button>;
